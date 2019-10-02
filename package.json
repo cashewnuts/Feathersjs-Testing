@@ -1,0 +1,33 @@
+{
+  "name": "featherjs",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "app",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "app",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run compile && npm run jest",
+    "dev": "ts-node-dev --no-notify app/",
+    "start": "npm run compile && node lib/",
+    "jest": "jest  --forceExit",
+    "compile": "shx rm -rf lib/ && tsc"
+  },
+  "types": "lib/"
+}
